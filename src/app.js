@@ -4,6 +4,7 @@ const hbs = require('hbs');
 const request = require('request');
 
 const app = express();
+const PORT = process.env.PORT || 3000;
 const geocode = require('./utils/geocode');
 const forecast = require('./utils/forecast');
 
@@ -63,14 +64,6 @@ app.get('/weather', (req, res) => {
 		});
 		
 	});
-
-
-	// res.send({
-	// 	forecast: 'Sunny',
-	// 	location: 'New York',
-	// 	address: req.query.address
-	// });
-	
 });
 
 app.get('/products', (req, res) => {
@@ -100,6 +93,8 @@ app.get('*', (req, res) => {
 	});
 });
 
-app.listen(3000, () => {
-	console.log('App is running on port 3000');
+
+
+app.listen(PORT, () => {
+	console.log('App is running on port: ' + PORT);
 });
