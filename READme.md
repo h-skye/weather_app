@@ -4,14 +4,20 @@ Deployed with heroku
 https://yyhuang-weather-app.herokuapp.com/
 
 
-Tech Stack:
+## Tech Stack:
 
 Express
+
 HTML
+
 CSS
 
-Libaries used:
+## Libaries used:
+
 nodemon
+
 hbs
+
 request
+
 
