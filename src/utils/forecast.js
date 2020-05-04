@@ -15,7 +15,7 @@ const forecast = (lat, long, cb) => {
 			const descrip = body.current.weather_descriptions;
 			//const fah = Math.round((celcius * (9/5)) + 32);
 			const precip = body.current.precip;
-			cb(undefined, `Today is ${descrip}. It is currently ${temp} degrees outside. There is ${precip}% chance of rain`);
+			cb(undefined, `Today is ${descrip}. \nIt is currently ${temp} degrees outside. \nThere is ${precip}% chance of rain`);
 		}
 	});
 
